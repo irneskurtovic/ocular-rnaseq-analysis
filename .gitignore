@@ -1,0 +1,58 @@
+﻿# RStudio local settings
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# R session and temporary files
+.Rout
+*.Rout
+*.tmp
+*.temp
+*.log
+*~
+*.swp
+*.swo
+*.bak
+
+# Operating system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+
+# Local environment and credentials
+.Renviron
+.env
+.env.*
+!.env.example
+/results/**/*.rds
+
+# R package build/check artifacts
+.Rcheck/
+*.tar.gz
+
+# Publish only the approved result tables
+/results/tables/*.csv
+!/results/tables/initial_sample_qc.csv
+!/results/tables/model_diagnostic_summary.csv
+!/results/tables/DE_cornea_SARS-CoV-2_vs_mock_annotated.csv
+!/results/tables/DE_limbus_SARS-CoV-2_vs_mock_annotated.csv
+!/results/tables/DE_sclera_SARS-CoV-2_vs_mock_annotated.csv
+!/results/tables/significant_gene_summary.csv
+!/results/tables/genes_shared_all_three_tissues.csv
+!/results/tables/shared_gene_direction_summary.csv
+!/results/tables/GO_BP_upregulated_all_three.csv
+!/results/tables/GO_BP_downregulated_all_three.csv
+
+# Exclude figure with unresolved provenance
+/results/figures/02_raw_log_count_distributions.png
+
+# Diagnostic figures retained locally but not selected for publication
+/results/figures/dispersion_cornea.png
+/results/figures/dispersion_limbus.png
+/results/figures/dispersion_sclera.png
+/results/figures/cooks_cornea.png
+/results/figures/cooks_limbus.png
+/results/figures/cooks_sclera.png

@@ -1,0 +1,4 @@
+"tissue","samples","genes_tested","na_pvalue","na_padj","significant_genes"
+"cornea",6,20844,0,6062,1036
+"limbus",6,20552,0,2790,771
+"sclera",6,20197,0,5091,3044
